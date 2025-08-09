@@ -17,7 +17,6 @@ def load_employee_data(file_path:str)-> list[dict]:
 def convert_to_sentences(employees: list[dict]) -> list[tuple[int, str]]:
     sentences = []
     for emp in employees:
-        # Safely unpack fields with defaults
         emp_id = emp.get("id")
         name = emp.get("name", "Unknown")
         skills = ", ".join(emp.get("skills", []))
