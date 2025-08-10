@@ -1,4 +1,5 @@
 - [HR Resource Query Chatbot](#hr-resource-query-chatbot)
+  - [Demo](#demo)
   - [Overview](#overview)
   - [Features](#features)
     - [Core Functionality](#core-functionality)
@@ -47,6 +48,11 @@
 # HR Resource Query Chatbot
 
 An intelligent HR assistant chatbot that helps teams find employees by answering natural language queries using AI-powered retrieval and generation techniques.
+
+<!-- TOC --><a name="demo"></a>
+
+## Demo
+[Watch Here](https://www.loom.com/share/092dc3e316164b4482063738f91a8ad1)
 
 <!-- TOC --><a name="overview"></a>
 
