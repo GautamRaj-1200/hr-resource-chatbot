@@ -27,7 +27,7 @@ FastAPI backend exposing employee retrieval and chat recommendation endpoints us
   ```
   If omitted, the backend will still run and respond with a template-based fallback.
 
-## Run
+## Run backend
 
 ```bash
 uv run fastapi dev app/main.py
@@ -36,6 +36,17 @@ uv run fastapi run app/main.py --port 8000
 ```
 
 Open API docs at `http://localhost:8000/docs`.
+
+## Run frontend (Streamlit)
+
+Set the backend URL if not defaulting to localhost:
+
+```bash
+export BACKEND_URL="http://localhost:8000"
+uv run streamlit run app/frontend/streamlit_app.py --server.port 8501
+```
+
+Open `http://localhost:8501` in your browser. Use the sidebar to switch between retrieval only and LLM recommendations.
 
 ## Endpoints
 
