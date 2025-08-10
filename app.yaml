@@ -1,0 +1,19 @@
+name: hr-resource-chatbot-backend
+services:
+  - name: api
+    source_dir: /
+    github:
+      repo: GautamRaj-1200/hr-resource-chatbot
+      branch: main
+    run_command: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    build_command: pip install -r requirements.txt
+    environment_slug: python
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    routes:
+      - path: /
+    envs:
+      - key: PORT
+        value: "8080"
+      - key: PYTHON_VERSION
+        value: "3.11"
